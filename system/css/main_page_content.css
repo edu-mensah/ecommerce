@@ -1,0 +1,130 @@
+/* see all btn */
+.see-all-top-selling-products,
+.see-all-promotion,
+.see-all-phones-and-tablets,
+.see-all-accessories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  border: 2px solid #fc0;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.see-all-rotate {
+  transform: rotate(90deg);
+}
+
+.main-page-wrapper {
+  width: 1150px;
+  margin: 10px auto;
+  display: grid;
+  gap: 10px 0;
+}
+
+.all-category-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 10px #00000036;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.all-category-wrapper div {
+  text-align: center;
+  width: 150px;
+}
+.all-category-wrapper div img {
+  border-radius: 10px;
+}
+
+/* promo */
+/* various category */
+
+.promotion-wrapper,
+.accessories-wrapper,
+.phones-and-tablets-wrapper,
+.top-selling-products-wrapper {
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00000036;
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 370px;
+  transition: 0.3s ease-in-out;
+}
+
+.see-all {
+  height: 680px;
+}
+.promotion-header-wrapper,
+.accessories-header-wrapper,
+.phones-and-tablets-header-wrapper,
+.top-selling-products-header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 10px 30px;
+  color: #000000;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #000000;
+}
+
+.accessories-header-wrapper,
+.phones-and-tablets-header-wrapper {
+  font-size: 1.5rem;
+  background-color: rgb(17, 1, 58);
+  color: #ffffff;
+}
+
+.promotion-product-wrapper,
+.accessories-product-wrapper,
+.phones-and-tablets-product-wrapper,
+.top-selling-products-product-wrapper {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.promotion-product-wrapper div,
+.accessories-product-wrapper div,
+.top-selling-products-product-wrapper div,
+.phones-and-tablets-product-wrapper div {
+  width: 210px;
+  height: 280px;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* .promotion-product-wrapper div:nth-child(even),
+.supermarket-product-wrapper div:nth-child(even),
+.top-selling-products-product-wrapper div:nth-child(even) {
+  background-color: #d8d7d7;
+} */
+
+/* .phones-and-tablets-product-wrapper div {
+  width: 280px;
+  padding: 10px;
+} */
+
+.add-to-cart-btn {
+  background-color: #ff0000;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.add-to-cart-btn:hover {
+  box-shadow: 0 0 20px #ff000067;
+  background-color: #f84343;
+}

@@ -1,0 +1,5 @@
+.top-selling-products-product-wrapper div:hover {
+  box-shadow: 0 0 20px #00000041;
+  transform: scale(1.02);
+  cursor: pointer;
+}

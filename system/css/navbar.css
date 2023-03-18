@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,300;1,700;1,800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Poppins, "Courier New", Courier, monospace;
+  /* background-color: #ff0000; */
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+img {
+  width: 100%;
+}
+.scroll-up-btn {
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+  color: #ff0000;
+  font-size: 3rem;
+}
+.chev-icon {
+  background: none;
+  color: #ffffff;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes blink {
+  0% {
+    transform: scale(1.01);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+  100% {
+    transform: scale(1.01);
+  }
+}
+
+/* advert nav bar styling */
+.ad-navbar-wrapper {
+  width: 100vw;
+  height: 60px;
+  background-color: #ff0000;
+}
+.ad-navbar-wrapper-toggle {
+  display: none;
+}
+.ad-navbar-wrapper div {
+  width: 1150px;
+  height: 60px;
+  margin: 0 auto;
+  background: url("../images/promo/sticky-GSF-desk.gif");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.ad-close-btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-color: #ffffff;
+  font-size: 1.3rem;
+  border-radius: 50px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ad-close-btn-toggle {
+  display: none;
+}
+
+/* title bar styling */
+.title-bar-wrapper {
+  width: 100vw;
+  height: 50px;
+  background-color: rgb(228, 228, 228);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 20px;
+}
+
+.title-bar-wrapper span:nth-child(2) {
+  color: #ff0000;
+  font-weight: bold;
+}
+
+.title-bar-wrapper span:nth-child(3) {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border-radius: 50px;
+}
+
+/* main title bar style */
+
+.main-title-wrapper {
+  background-color: #ffffff;
+  box-shadow: 0 5px 5px #00000028;
+  /* height: 80px; */
+  width: 100vw;
+}
+
+.main-title-wrapper-toggle {
+  position: fixed;
+  top: 0;
+}
+
+.main-title-contain {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1150px;
+  margin: 0 auto;
+}
+
+.logo-wrapper {
+  width: 15%;
+  color: #000000;
+}
+.logo-wrapper span {
+  color: #ff0000;
+  font-size: 1rem;
+}
+.search-form-wrapper {
+  width: 55%;
+  /* border: 1px solid #000000; */
+}
+.search-form-wrapper form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-form-wrapper .form-item {
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 1px solid #ff0000;
+  margin-right: 10px;
+}
+
+.search-form-wrapper .form-item input {
+  width: 450px;
+  font-size: 1.1rem;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background: none;
+}
+.search-form-wrapper .form-submit {
+  background-color: #ff0000;
+  border-radius: 5px;
+}
+.search-form-wrapper .form-submit button {
+  width: 130px;
+  color: #ffffff;
+  font-size: 1.1rem;
+  padding: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.search-form-wrapper .form-submit button:hover {
+  box-shadow: 0 0 20px #ff000093;
+}
+
+.user-account-wrapper {
+  width: 18%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.user-account-wrapper button {
+  width: 48%;
+  color: #ff0000;
+  background: none;
+  font-size: 1rem;
+  padding: 10px;
+  border: 1px solid #ff0000;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.user-account-wrapper button:hover {
+  color: #ffffff;
+  background: #ff0000;
+  box-shadow: 0 0 20px #ff000093;
+}
+
+.cart-icon-wrapper {
+  width: 10%;
+  cursor: pointer;
+  text-align: center;
+  padding: 10px;
+  font-size: 1rem;
+  color: #ff0000;
+  background: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #0000002d;
+}
