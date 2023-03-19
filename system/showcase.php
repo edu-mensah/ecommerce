@@ -7,12 +7,16 @@
                     Phones &amp;
                     Tablets</a>
             </li>
-            <li><a href=""><span> <i class="fas fa-building"></i> </span> Home &amp; Office </a></li>
-            <li><a href=""><span> <i class="fas fa-television"></i> </span> Electronics </a></li>
-            <li><a href=""><span> <i class="fas fa-laptop"></i> </span> Computing </a></l>
-            <li><a href=""><span> <i class="fas fa-tshirt"></i> </span> Fashion </a></li>
-            <li><a href=""><span> <i class="fas fa-gamepad"></i> </span> Gaming </a></li>
-            <li><a href=""><span> <i class="fas fa-wine-bottle"></i> </span> Wedding </a></li>
+            <!-- <li><a href=""><span> <i class="fas fa-building"></i> </span> Home &amp; Office </a></li> -->
+            <li><a href="system/includes/electronics_page.php"><span> <i class="fas fa-television"></i> </span>
+                    Electronics </a></li>
+            <li><a href="system/includes/computing_page.php"><span> <i class="fas fa-laptop"></i> </span> Computing </a>
+                </l>
+            <li><a href="system/includes/fashion_and_clothing_page.php"><span> <i class="fas fa-tshirt"></i> </span>
+                    Fashion &amp; Clothing </a></li>
+            <li><a href="system/includes/gaming_page.php"><span> <i class="fas fa-gamepad"></i> </span> Gaming </a></li>
+            <li><a href="system/includes/wedding_page.php"><span> <i class="fas fa-wine-bottle"></i> </span> Wedding
+                </a></li>
             <li><a href=""><span> <i class="fas fa-ellipsis-h"></i> </span> Other Categories </a></li>
         </ul>
     </div>

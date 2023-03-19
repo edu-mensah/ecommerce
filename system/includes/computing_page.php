@@ -36,7 +36,7 @@
 
 
 
-    <h1>This is the Phone and Tablets</h1>
+    <h1>This is the Computing</h1>
 
 
 

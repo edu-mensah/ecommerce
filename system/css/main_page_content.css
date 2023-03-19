@@ -2,7 +2,11 @@
 .see-all-top-selling-products,
 .see-all-promotion,
 .see-all-phones-and-tablets,
-.see-all-accessories {
+.see-all-accessories,
+.see-all-electronics,
+.see-all-gaming,
+.see-all-computing,
+.see-all-fashion-and-clothing {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,7 +53,11 @@
 .promotion-wrapper,
 .accessories-wrapper,
 .phones-and-tablets-wrapper,
-.top-selling-products-wrapper {
+.top-selling-products-wrapper,
+.electronics-wrapper,
+.gaming-wrapper,
+.computing-wrapper,
+.fashion-and-clothing-wrapper {
   border-radius: 10px;
   box-shadow: 0 0 10px #00000036;
   background-color: #ffffff;
@@ -65,7 +73,11 @@
 .promotion-header-wrapper,
 .accessories-header-wrapper,
 .phones-and-tablets-header-wrapper,
-.top-selling-products-header-wrapper {
+.top-selling-products-header-wrapper,
+.electronics-header-wrapper,
+.gaming-header-wrapper,
+.computing-header-wrapper,
+.fashion-and-clothing-header-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -77,7 +89,11 @@
 }
 
 .accessories-header-wrapper,
-.phones-and-tablets-header-wrapper {
+.phones-and-tablets-header-wrapper,
+.electronics-header-wrapper,
+.gaming-header-wrapper,
+.fashion-and-clothing-header-wrapper,
+.computing-header-wrapper {
   font-size: 1.5rem;
   background-color: rgb(17, 1, 58);
   color: #ffffff;
@@ -86,7 +102,11 @@
 .promotion-product-wrapper,
 .accessories-product-wrapper,
 .phones-and-tablets-product-wrapper,
-.top-selling-products-product-wrapper {
+.top-selling-products-product-wrapper,
+.electronics-product-wrapper,
+.gaming-product-wrapper,
+.computing-product-wrapper,
+.fashion-and-clothing-product-wrapper {
   display: flex;
   gap: 10px;
   justify-content: center;
@@ -97,7 +117,11 @@
 .promotion-product-wrapper div,
 .accessories-product-wrapper div,
 .top-selling-products-product-wrapper div,
-.phones-and-tablets-product-wrapper div {
+.phones-and-tablets-product-wrapper div,
+.electronics-product-wrapper div,
+.gaming-product-wrapper div,
+.fashion-and-clothing-product-wrapper div,
+.computing-product-wrapper div {
   width: 210px;
   height: 280px;
   padding: 15px;
