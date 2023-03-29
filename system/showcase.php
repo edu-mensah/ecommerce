@@ -15,9 +15,8 @@
             <li><a href="system/includes/fashion_and_clothing_page.php"><span> <i class="fas fa-tshirt"></i> </span>
                     Fashion &amp; Clothing </a></li>
             <li><a href="system/includes/gaming_page.php"><span> <i class="fas fa-gamepad"></i> </span> Gaming </a></li>
-            <li><a href="system/includes/wedding_page.php"><span> <i class="fas fa-wine-bottle"></i> </span> Wedding
-                </a></li>
-            <li><a href=""><span> <i class="fas fa-ellipsis-h"></i> </span> Other Categories </a></li>
+            <li><a href="system/includes/wedding_page.php"><span> <i class="fas fa-wine-bottle"></i> </span> Wedding </a></li>
+            
         </ul>
     </div>
     <!-- <div class="slider-wrapper"> -->

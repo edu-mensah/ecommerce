@@ -1,0 +1,6 @@
+{
+    "editor.formatOnSave": true,
+    "editor.fontSize": 18,
+    "editor.fontFamily": "'Droid Sans Mono', 'monospace', monospace",
+    "editor.formatOnPaste": true
+}

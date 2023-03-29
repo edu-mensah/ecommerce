@@ -100,5 +100,6 @@
         </div>
 
     </div>
-    <a href="system/includes/gaming_page.php"> SEE ALL PRODUCTS</a>
 </div>
+
+    <a href="system/includes/gaming_page.php"  class="link-to-page"  > SEE ALL PRODUCTS</a>

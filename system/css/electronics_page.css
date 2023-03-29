@@ -1,0 +1,48 @@
+
+
+
+.electronics-container {
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00000036;
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  /* height: 370px; */
+  transition: 0.3s ease-in-out;
+}
+
+
+.electronics-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 10px 30px;
+  color: #000000;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #000000;
+}
+
+.electronics-header-container {
+  font-size: 1.5rem;
+  background-color: rgb(17, 1, 58);
+  color: #ffffff;
+}
+
+
+.electronics-product-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+
+.electronics-product-container div {
+  width: 210px;
+  height: 280px;
+  padding: 15px;
+  border-radius: 10px;
+}

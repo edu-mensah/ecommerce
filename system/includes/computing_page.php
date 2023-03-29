@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -6,26 +6,25 @@
     <link rel="shortcut icon" href="../images/icons/favicon.jpg" type="image/x-icon">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>G22 Ghana | Online Shopping</title>
+    <title>G22 Computing | Online Shopping</title> -->
     <!-- custom styling -->
-    <link rel="stylesheet" href="../css/navbar.css?v=<?= time();?>">
+    <!-- <link rel="stylesheet" href="../css/navbar.css?v=<?= time();?>">
     <link rel="stylesheet" href="../css/login_and_signup.css?v=<?= time();?>">
     <link rel="stylesheet" href="../css/showcase.css?v=<?= time();?>">
     <link rel="stylesheet" href="../css/main_page_content.css?v=<?= time();?>">
-    <link rel="stylesheet" href="../css/top_selling_products.css?v=<?= time();?>">
+    <link rel="stylesheet" href="../css/top_selling_products.css?v=<?= time();?>"> -->
+
     <!-- fontawesome -->
-    <link rel="stylesheet" href="../fontawesome/css/all.css?v=<?= time();?>">
+    <!-- <link rel="stylesheet" href="../fontawesome/css/all.css?v=<?= time();?>">
 </head>
 
-<body>
+<body> -->
 
 
     <?php
-    include '../navbar.php';
+    include 'navigation.php';
 
-?>
-
-
+    ?>
 
 
 
@@ -36,7 +35,113 @@
 
 
 
-    <h1>This is the Computing</h1>
+
+
+    <main class="main-container" >
+            <div class="computing-container">
+                <div class="computing-header-container">
+                <p> Computing </p>
+                <span class="">
+                    <i class="fas fa-th"></i>
+                </span>
+        </div>
+        <div class="computing-product-container">
+            <div class="">
+                <span>
+                    <img src="../images/products/guinness_malta_drink.jpg" alt="">
+                </span>
+                <p>Nasco Air Conditioner</p>
+                <p>GHc 1,150</p>
+                <button class="add-to-cart-btn"> ADD TO CART </button>
+            </div>
+
+            <div class="">
+                <span>
+                    <img src="../images/promo/Explosion_day_d.gif" alt="">
+                </span>
+                <p>Nasco Air Conditioner</p>
+                <p>GHc 1,150</p>
+                <button class="add-to-cart-btn"> ADD TO CART </button>
+            </div>
+
+            <div class="">
+                <span>
+                    <img src="../images/promo/Explosion_day_d.gif" alt="">
+                </span>
+                <p>Nasco Air Conditioner</p>
+                <p>GHc 1,150</p>
+                <button class="add-to-cart-btn"> ADD TO CART </button>
+            </div>
+
+            <div class="">
+                <span>
+                    <img src="../images/promo/Explosion_day_d.gif" alt="">
+                </span>
+                <p>Nasco Air Conditioner</p>
+                <p>GHc 1,150</p>
+                <button class="add-to-cart-btn"> ADD TO CART </button>
+            </div>
+
+            <div class="">
+                <span>
+                    <img src="../images/promo/Explosion_day_d.gif" alt="">
+                </span>
+                <p>Nasco Air Conditioner</p>
+                <p>GHc 1,150</p>
+                <button class="add-to-cart-btn"> ADD TO CART </button>
+            </div>
+
+            <div class="">
+                <span>
+                    <img src="../images/promo/Explosion_day_d.gif" alt="">
+                </span>
+                <p>Nasco Air Conditioner</p>
+                <p>GHc 1,150</p>
+                <button class="add-to-cart-btn"> ADD TO CART </button>
+            </div>
+
+            <div class="">
+                <span>
+                    <img src="../images/promo/Explosion_day_d.gif" alt="">
+                </span>
+                <p>Nasco Air Conditioner</p>
+                <p>GHc 1,150</p>
+                <button class="add-to-cart-btn"> ADD TO CART </button>
+            </div>
+
+
+            <div class="">
+                <span>
+                    <img src="../images/promo/Explosion_day_d.gif" alt="">
+                </span>
+                <p>Nasco Air Conditioner</p>
+                <p>GHc 1,150</p>
+                <button class="add-to-cart-btn"> ADD TO CART </button>
+            </div>
+
+
+            <div class="">
+                <span>
+                    <img src="../images/promo/Explosion_day_d.gif" alt="">
+                </span>
+                <p>Nasco Air Conditioner</p>
+                <p>GHc 1,150</p>
+                <button class="add-to-cart-btn"> ADD TO CART </button>
+            </div>
+
+
+            <div class="">
+                <span>
+                    <img src="../images/promo/Explosion_day_d.gif" alt="">
+                </span>
+                <p>Nasco Air Conditioner</p>
+                <p>GHc 1,150</p>
+                <button class="add-to-cart-btn"> ADD TO CART </button>
+            </div>
+
+        </div>
+        </div>
+    </main>
 
 
 

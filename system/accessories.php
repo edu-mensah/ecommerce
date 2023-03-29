@@ -100,5 +100,6 @@
         </div>
 
     </div>
-    <a href="includes/acecessories_page.php"> SEE ALL PRODUCTS</a>
 </div>
+
+    <a href="includes/acecessories_page.php" class="link-to-page" > SEE ALL PRODUCTS</a>

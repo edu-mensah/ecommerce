@@ -107,7 +107,7 @@
             <p>GHc 1,150</p>
             <button class="add-to-cart-btn"> ADD TO CART </button>
         </div>
-
     </div>
-    <a href="system/includes/phones_and_tablets_page.php"> SEE ALL PRODUCTS</a>
 </div>
+
+    <a href="system/includes/phones_and_tablets_page.php" class="link-to-page"> SEE ALL PRODUCTS</a>

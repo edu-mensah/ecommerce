@@ -1,23 +1,50 @@
- <nav class="ad-navbar-wrapper">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../images/icons/favicon.jpg" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G22 Phones | Online Shopping</title>
+    <!-- custom styling -->
+    <link rel="stylesheet" href="../css/navbar.css?v=<?= time();?>">
+    <link rel="stylesheet" href="../css/login_and_signup.css?v=<?= time();?>">
+    <link rel="stylesheet" href="../css/showcase.css?v=<?= time();?>">
+    <link rel="stylesheet" href="../css/main_page_content.css?v=<?= time();?>">
+    <link rel="stylesheet" href="../css/top_selling_products.css?v=<?= time();?>">
+    <link rel="stylesheet" href="../css/phones_and_tablets_page.css?v=<?= time();?>">
+    <link rel="stylesheet" href="../css/computing_page.css?v=<?= time();?>">
+    <link rel="stylesheet" href="../css/electronics_page.css?v=<?= time();?>">
+    <link rel="stylesheet" href="../css/fashion_and_clothing_page.css?v=<?= time();?>">
+    <link rel="stylesheet" href="../css/gaming_page.css?v=<?= time();?>">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="../fontawesome/css/all.css?v=<?= time();?>">
+</head>
+
+<body>
+
+<nav class="ad-navbar-wrapper">
      <div class="">
 
      </div>
- </nav>
+</nav>
  <span class="ad-close-btn"> <i class="fas fa-close"></i> </span>
  <nav class="title-bar-wrapper" id="top">
      <!-- <span>Buy from G22</span>
      <span>
-         G22  <i class="fas fa-bag-shopping"></i> ONLINE SHOP
+         G22 - ONLINE SHOP
      </span>
      <span>
-        
+         <i class="fas fa-shopping-cart"></i>
      </span>
      <span>
          <i class="fas fa-shield"></i> PAY
      </span> -->
      <ul>
-        <li><a href="system/includes/about_page.php"> <span> <i class="fas fa-bookmark"></i></span> About </a></li>
-        <li><a href="system/includes/contact_page.php"> <span> <i class="fas fa-envelope"></i></span>  Contact </a></li>
+        <li><a href="about_page.php"> <span> <i class="fas fa-bookmark"></i></span> About </a></li>
+        <li><a href="contact_page.php"> <span> <i class="fas fa-envelope"></i></span>  Contact </a></li>
      </ul>
  </nav>
 
@@ -25,7 +52,7 @@
  <nav class="main-title-wrapper" >
      <div class="main-title-contain">
          <div class="logo-wrapper">
-             <a href="index.php"><h2> G22 - SHOP</h2></a>
+             <a href="../../index.php"><h2> G22 - SHOP <!--<span><i class="fas fa-shopping-basket"></i></span> --></h2></a>
          </div>
 
 
@@ -70,11 +97,6 @@
          </div>
 
          <div class="form-item">
-             <span> <i class="fas fa-location-crosshairs"></i> </span>
-             <input type="text" name="res_address" placeholder="GPS Code" autocomplete="off" id="">
-         </div>
-
-         <div class="form-item">
              <span> <i class="fas fa-lock"></i> </span>
              <input type="password" name="password" placeholder="Password" id="">
          </div>
@@ -88,7 +110,7 @@
              <!-- <span> <i class="fas fa-user"></i> </span> -->
              <input type="submit" name="submit" value="SIGN-UP" id="">
          </div>
-         <!-- <p class="signin-link"> Have an account. </p> -->
+         <p class="signin-link"> Have an account. </p>
      </form>
 
      <span class="signup-close-btn"> <i class="fas fa-close"></i> </span>
@@ -112,8 +134,20 @@
              <!-- <span> <i class="fas fa-user"></i> </span> -->
              <input type="submit" name="submit" value="SIGN-IN" id="">
          </div>
-         <!-- <p class="signup-link"> Don't have an account? </p> -->
+         <p class="signup-link"> Don't have an account? </p>
      </form>
 
      <span class="signin-close-btn"> <i class="fas fa-close"></i> </span>
+ </div>
+
+ <div class="page-links">
+    <ul>
+        <li><a href="../../index.php"> Home</a></li>
+        <li><a href="phones_and_tablets_page.php"> Phones &amp; Tablets</a></li>
+        <li><a href="electronics_page.php"> Electronics</a></li>
+        <li><a href="computing_page.php"> Computing</a></li>
+        <li><a href="fashion_and_clothing_page.php"> Fashion &amp; Clothing</a></li>
+        <li><a href="gaming_page.php"> Gaming</a></li>
+        <li><a href="wedding_page.php"> wedding</a></li>
+    </ul>
  </div>

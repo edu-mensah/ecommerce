@@ -109,5 +109,6 @@
         </div>
 
     </div>
-    <a href="system/includes/fashion_and_clothing_page.php"> SEE ALL PRODUCTS</a>
 </div>
+
+    <a href="system/includes/fashion_and_clothing_page.php" class="link-to-page" > SEE ALL PRODUCTS</a>

@@ -67,6 +67,10 @@
   transition: 0.3s ease-in-out;
 }
 
+
+
+
+
 .see-all {
   height: 680px;
 }
@@ -138,6 +142,25 @@
   width: 280px;
   padding: 10px;
 } */
+
+
+/* .promotion-wrapper a,
+.accessories-wrapper a,
+.phones-and-tablets-wrapper a,
+.top-selling-products-wrapper a,
+.electronics-wrapper a,
+.gaming-wrapper a,
+.computing-wrapper a,
+.fashion-and-clothing-wrapper a {
+  color: #ff0000;
+  width: 100px;
+  margin: 20px auto;
+} */
+
+.link-to-page{
+  color: #ff0000;
+  text-align: center;
+}
 
 .add-to-cart-btn {
   background-color: #ff0000;
