@@ -1,0 +1,73 @@
+/* Media queries */
+@media screen and (max-width: 1024px) {
+    body{
+        background-color: #ff0000;
+    }
+    .ad-navbar-wrapper div {
+            max-width: 900px;
+        }
+    .ad-close-btn {
+        display: none;
+    }
+
+    .main-title-contain {
+        max-width: 900px;
+        gap: 0 5px;
+    }
+
+    .search-form-wrapper .form-item input {
+        width: 300px;
+    
+    }
+
+
+    
+    .user-account-wrapper button {
+        font-size: 0.9rem;
+        padding: 5px;
+        
+    }
+
+    .user-account-container span:nth-child(1) {
+        width: 40px;
+        height: 40px;
+    }
+
+    .cart-icon-wrapper {
+        padding: 5px
+    }
+
+    .showcase {
+        max-width: 900px;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .category-link-wrapper {
+        grid-column: 1/3;
+        grid-row: 3;
+    }
+
+    .carousel {
+        grid-column: 1/6;
+        grid-row: 1/3;
+    }
+    .contact-wrapper {
+        grid-column: 3;
+        grid-row: 3;
+        font-size: 0.9rem;
+    }
+    .contact-wrapper div span:nth-child(1) {
+        padding: 10px;
+        margin-right: 5px;
+        width: 15px;
+        height: 15px;
+    }
+
+
+    .showcase-ad-wrapper {
+        grid-column: 4/6;
+        grid-row: 3;
+    }
+
+}

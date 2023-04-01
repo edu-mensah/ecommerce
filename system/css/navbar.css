@@ -40,6 +40,13 @@ img {
   animation-duration: 0.5s;
   animation-iteration-count: infinite;
 }
+.error{
+  color: #ffffff;
+  text-align: center;
+  margin: -5px 0;
+}
+
+
 @keyframes blink {
   0% {
     transform: scale(1.01);
@@ -55,19 +62,18 @@ img {
 /* advert nav bar styling */
 .ad-navbar-wrapper {
   width: 100vw;
-  height: 60px;
   background-color: #ffffff;
 }
 .ad-navbar-wrapper-toggle {
   display: none;
 }
 .ad-navbar-wrapper div {
-  width: 1150px;
-  height: 60px;
+  max-width: 1150px;
+  height: 50px;
   margin: 0 auto;
   background: url("../images/promo/sticky-GSF-desk.gif");
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
@@ -199,9 +205,9 @@ img {
   border-radius: 5px;
 }
 .search-form-wrapper .form-submit button {
-  width: 130px;
+  width: 120px;
   color: #ffffff;
-  font-size: 1.1rem;
+  font-size: 1rem;
   padding: 10px;
   background: none;
   border: none;
@@ -213,7 +219,7 @@ img {
   box-shadow: 0 0 20px #ff000093;
 }
 
-.user-account-wrapper {
+.user-account-wrapper, .user-account-container {
   width: 18%;
   display: flex;
   align-items: center;
@@ -230,6 +236,57 @@ img {
   cursor: pointer;
   transition: 0.3s ease-in-out;
 }
+
+.user-account-container span{
+  color: #000000;
+  border: none;
+}
+
+.user-account-container span:nth-child(1){
+  width: 50px;
+  height: 50px;
+  border: 2px solid #ff0000;
+  border-radius: 50px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.user-account-container span:nth-child(2) {
+  width: 70%;
+  font-size: 1rem;
+}
+
+
+.account-drop-menu{
+position: absolute;
+z-index: 15;
+background-color: #ffffff;
+width: 200px;
+/* height: 150px; */
+padding: 20px;
+border-radius: 10px;
+top: 183px;
+box-shadow: 0 0 20px #0000003b;
+/* overflow: hidden; */
+display: none;
+}
+
+.show-menu{
+  display: block;
+}
+
+.account-drop-menu ul li{
+  margin: 5px 0;
+}
+.account-drop-menu a{
+  color: #ff0000;
+  font-size: 1.2rem;
+}
+
+.account-drop-menu ul a:hover{
+  color: #363636;
+}
+
 
 .user-account-wrapper button:hover {
   color: #ffffff;

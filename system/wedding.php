@@ -1,11 +1,11 @@
-<div class="accessories-wrapper" id="accessories">
-    <div class="accessories-header-wrapper">
-        <p> Accessories </p>
-        <span class="see-all-accessories">
+<div class="wedding-wrapper" id="wedding">
+    <div class="wedding-header-wrapper">
+        <p> Wedding </p>
+        <span class="see-all-wedding">
             <i class="fas fa-chevron-right"></i>
         </span>
     </div>
-    <div class="accessories-product-wrapper">
+    <div class="wedding-product-wrapper">
         <div class="">
             <span>
                 <img src="system/images/promo/Explosion_day_d.gif" alt="">
@@ -102,4 +102,4 @@
     </div>
 </div>
 
-    <a href="includes/acecessories_page.php" class="link-to-page" > SEE ALL PRODUCTS</a>
+    <a href="system/includes/wedding_page.php" class="link-to-page" > SEE ALL PRODUCTS</a>

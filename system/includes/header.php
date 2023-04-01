@@ -1,3 +1,12 @@
+<?php 
+// initializing a session
+session_start();
+
+
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,6 +22,8 @@
     <link rel="stylesheet" href="system/css/showcase.css?v=<?= time();?>">
     <link rel="stylesheet" href="system/css/main_page_content.css?v=<?= time();?>">
     <link rel="stylesheet" href="system/css/top_selling_products.css?v=<?= time();?>">
+    <link rel="stylesheet" href="system/css/footer.css?v=<?= time();?>">
+    <link rel="stylesheet" href="system/css/responsive.css?v=<?= time();?>">
     <!-- fontawesome -->
     <link rel="stylesheet" href="system/fontawesome/css/all.css?v=<?= time();?>">
 </head>

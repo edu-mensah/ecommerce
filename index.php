@@ -26,7 +26,7 @@
 
 
         // promotion container
-        include_once 'system/promotion.php';
+        // include_once 'system/promotion.php';
 
         // phones and tablets category section
         include_once 'system/phones_and_tablets.php';
@@ -36,8 +36,13 @@
         include_once 'system/electronics.php';
 
 
-        // ectronics category  section
+        // electronics category  section
         include_once 'system/computing.php';
+
+
+
+        // promo  section
+        include_once 'system/promo.php';
 
         // ectronics category  section
         include_once 'system/fashion_and_clothing.php';
@@ -45,7 +50,7 @@
         
 
         // Accessories category section
-        include_once 'system/accessories.php';
+        include_once 'system/wedding.php';
 
 
 

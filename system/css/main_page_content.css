@@ -2,7 +2,7 @@
 .see-all-top-selling-products,
 .see-all-promotion,
 .see-all-phones-and-tablets,
-.see-all-accessories,
+.see-all-wedding,
 .see-all-electronics,
 .see-all-gaming,
 .see-all-computing,
@@ -51,7 +51,7 @@
 /* various category */
 
 .promotion-wrapper,
-.accessories-wrapper,
+.wedding-wrapper,
 .phones-and-tablets-wrapper,
 .top-selling-products-wrapper,
 .electronics-wrapper,
@@ -75,7 +75,8 @@
   height: 680px;
 }
 .promotion-header-wrapper,
-.accessories-header-wrapper,
+.promo-header-wrapper,
+.wedding-header-wrapper,
 .phones-and-tablets-header-wrapper,
 .top-selling-products-header-wrapper,
 .electronics-header-wrapper,
@@ -92,7 +93,8 @@
   border-bottom: 2px solid #000000;
 }
 
-.accessories-header-wrapper,
+.wedding-header-wrapper,
+.promo-header-wrapper,
 .phones-and-tablets-header-wrapper,
 .electronics-header-wrapper,
 .gaming-header-wrapper,
@@ -104,7 +106,7 @@
 }
 
 .promotion-product-wrapper,
-.accessories-product-wrapper,
+.wedding-product-wrapper,
 .phones-and-tablets-product-wrapper,
 .top-selling-products-product-wrapper,
 .electronics-product-wrapper,
@@ -119,7 +121,7 @@
   padding: 10px;
 }
 .promotion-product-wrapper div,
-.accessories-product-wrapper div,
+.wedding-product-wrapper div,
 .top-selling-products-product-wrapper div,
 .phones-and-tablets-product-wrapper div,
 .electronics-product-wrapper div,

@@ -1,0 +1,47 @@
+.main-footer{
+    background-color: #000000;
+}
+
+.footer, .brands{
+    max-width: 1150px;
+    padding: 50px;
+    margin: 0 auto;
+    display: flex;
+    gap: 0 50px;
+}
+
+.social-media{
+    color: #ffffff;
+}
+.social-media a{
+    color: #ffffff;
+    font-size: 1.3rem;
+    margin-right: 10px;
+}
+
+.payment-mode{
+    color: #ffffff;
+}
+.payment-mode ul{
+    display: inline-flex;
+    gap: 0 20px;
+}
+
+.payment-mode ul li:hover, .social-media a:hover {
+    color: #ff0000;
+}
+
+.brands ul{
+    display: inline-flex;
+    color: #ffffff;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.brands li{
+    width: 20%;
+}
+
+.brands li:hover {
+   text-decoration: underline;
+}

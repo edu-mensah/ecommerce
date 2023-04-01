@@ -5,6 +5,8 @@ let signinBtn = document.querySelector(".signin-close-btn");
 let signupButton = document.querySelector(".signup-btn");
 let signinButton = document.querySelector(".signin-btn");
 
+//
+
 // event listener
 signupBtn.addEventListener("click", () => {
   signUpWrapper.classList.toggle("signup-wrapper-toggle");
@@ -21,4 +23,12 @@ signinButton.addEventListener("click", () => {
   signInWrapper.classList.toggle("signin-wrapper-toggle");
 });
 
+//
+//
+//
+let userDropBtn = document.querySelector(".user-account-container");
+let userDropMenu = document.querySelector(".account-drop-menu");
 
+userDropBtn.addEventListener("click", () => {
+  userDropMenu.classList.toggle("show-menu");
+});

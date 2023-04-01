@@ -8,7 +8,7 @@ let topSellingProductsWrapper = document.querySelector(
 );
 
 let promotionWrapper = document.querySelector(".promotion-wrapper");
-let accessoriesWrapper = document.querySelector(".accessories-wrapper");
+let weddingWrapper = document.querySelector(".wedding-wrapper");
 let electronicsWrapper = document.querySelector(".electronics-wrapper");
 let computingWrapper = document.querySelector(".computing-wrapper");
 let gamingWrapper = document.querySelector(".gaming-wrapper");
@@ -21,7 +21,7 @@ let fashionClothingWrapper = document.querySelector(
 
 // getting elements for click events
 let seeAllPromotionBtn = document.querySelector(".see-all-promotion");
-let seeAllAccessoriesBtn = document.querySelector(".see-all-accessories");
+let seeAllWeddingBtn = document.querySelector(".see-all-wedding");
 let seeAllElectronicsBtn = document.querySelector(".see-all-electronics");
 let seeAllGamingBtn = document.querySelector(".see-all-gaming");
 let seeAllComputingBtn = document.querySelector(".see-all-computing");
@@ -46,9 +46,9 @@ seeAllPromotionBtn.addEventListener("click", () => {
   promotionWrapper.classList.toggle("see-all");
 });
 
-seeAllAccessoriesBtn.addEventListener("click", () => {
-  seeAllAccessoriesBtn.classList.toggle("see-all-rotate");
-  accessoriesWrapper.classList.toggle("see-all");
+seeAllWeddingBtn.addEventListener("click", () => {
+  seeAllWeddingBtn.classList.toggle("see-all-rotate");
+  weddingWrapper.classList.toggle("see-all");
 });
 
 //

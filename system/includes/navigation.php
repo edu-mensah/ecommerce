@@ -1,3 +1,8 @@
+<?php 
+
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,9 +23,11 @@
     <link rel="stylesheet" href="../css/electronics_page.css?v=<?= time();?>">
     <link rel="stylesheet" href="../css/fashion_and_clothing_page.css?v=<?= time();?>">
     <link rel="stylesheet" href="../css/gaming_page.css?v=<?= time();?>">
+    <link rel="stylesheet" href="../css/footer.css?v=<?= time();?>">
+    <link rel="stylesheet" href="../css/responsive.css?v=<?= time();?>">
 
     <!-- fontawesome -->
-    <link rel="stylesheet" href="../fontawesome/css/all.css?v=<?= time();?>">
+    <link rel="stylesheet" href="../fontawesome/css/all.css ?v=<?= time();?>">
 </head>
 
 <body>
@@ -67,55 +74,156 @@
              </form>
          </div>
 
-         <div class="user-account-wrapper">
-             <button class="signup-btn">SIGN-UP</button>
-             <button class="signin-btn">SIGN-IN</button>
-         </div>
-
+         <?php if (isset($_SESSION['customer_id'])) { ?>
+                <div class="user-account-container user-account-wrapper">
+                    <span class="profile-picture"> 
+                        <img src="../images/profile_pictures/pro.jpg" alt="">
+                    </span>
+                    <span class="profile-name" > <?= $_SESSION['customer_name'] ?></span>
+                    <ul class="account-drop-menu" >
+                        <li><a href="../configuration/sign_out.php"> Log out</a></li>
+                    </ul>
+                    <button style="display: none;" class="signup-btn">SIGN-UP</button>
+                    <button style="display: none;" class="signin-btn">SIGN-IN</button>
+                 </div>
+            <?php } else { ?>
+                <div class="user-account-wrapper user-account-container">
+                    <button class="signup-btn">SIGN-UP</button>
+                    <button class="signin-btn">SIGN-IN</button>
+                </div>
+            <?php } ?>
 
          <div class="cart-icon-wrapper">
              <h3> <i class="fas fa-shopping-cart"></i> Cart </h3>
          </div>
      </div>
  </nav>
+
+
  <div class="signup-wrapper">
      <h2>SIGN-UP</h2>
-     <form action="" method="post">
-         <div class="form-item">
+     <form action="../configuration/sign_up.php" method="post">
+        <!--  -->
+        <?php   if (isset($_GET['username_error'])) { ?>
+            <div class="form-item">
              <span> <i class="fas fa-user"></i> </span>
-             <input type="text" name="username" placeholder="Username" autocomplete="off" id="">
+             <input type="text" name="username" placeholder="Username" value="<?= $_GET['username'] ?>" autocomplete="off" id="">
          </div>
+         <p class="error"> <?= $_GET['username_error'] ?> </p>
+        <?php } elseif(isset($_GET['username'])) { ?>
+            <div class="form-item">
+             <span> <i class="fas fa-user"></i> </span>
+             <input type="text" name="username" placeholder="Username" value="<?= $_GET['username'] ?>" autocomplete="off" id="">
+         </div>
+            <?php }else { ?>
+            <div class="form-item">
+                <span> <i class="fas fa-user"></i> </span>
+                <input type="text" name="username" placeholder="Username" autocomplete="off" id="">
+            </div>
+            <?php } ?>
+         
 
-         <div class="form-item">
-             <span> <i class="fas fa-envelope"></i> </span>
-             <input type="text" name="email" placeholder="Email" autocomplete="off" id="">
-         </div>
 
-         <div class="form-item">
-             <span> <i class="fas fa-phone"></i> </span>
-             <input type="text" name="phone_number" placeholder="Phone Number" autocomplete="off" id="">
-         </div>
+            <!--  -->
+            <?php  if (isset($_GET['email_error'])) { ?>
+            <div class="form-item">
+                <span> <i class="fas fa-envelope"></i> </span>
+                <input type="text" name="email" placeholder="Email" value="<?= $_GET['email'] ?>" autocomplete="off" id="">
+            </div>
+            <p class="error"> <?= $_GET['email_error'] ?> </p>
+            <?php } elseif (isset($_GET['email'])) { ?>
+                <div class="form-item">
+                    <span> <i class="fas fa-envelope"></i> </span>
+                    <input type="text" name="email" placeholder="Email" value="<?= $_GET['email'] ?>" autocomplete="off" id="">
+                </div>
+            <?php } else{ ?>
+                <div class="form-item">
+                    <span> <i class="fas fa-envelope"></i> </span>
+                    <input type="text" name="email" placeholder="Email" autocomplete="off" id="">
+                </div>
+            <?php } ?>
 
-         <div class="form-item">
-             <span> <i class="fas fa-lock"></i> </span>
-             <input type="password" name="password" placeholder="Password" id="">
-         </div>
 
-         <div class="form-item">
-             <span> <i class="fas fa-lock"></i> </span>
-             <input type="password" name="confirm_password" placeholder="Confirm Password" id="">
-         </div>
+
+
+            <!--  -->
+            <?php if (isset($_GET['phone_number_error'])) { ?>
+                <div class="form-item">
+                    <span> <i class="fas fa-phone"></i> </span>
+                    <input type="text" name="phone_number" placeholder="Phone Number" value="<?= $_GET['phone_number'] ?>" autocomplete="off" id="">
+                </div>
+                <p class="error"> <?= $_GET['phone_number_error'] ?> </p>
+           <?php } elseif (isset($_GET['phone_number'])) { ?>
+                <div class="form-item">
+                    <span> <i class="fas fa-phone"></i> </span>
+                    <input type="text" name="phone_number" placeholder="Phone Number" value="<?= $_GET['phone_number'] ?>" autocomplete="off" id="">
+                </div>                    
+           <?php } else { ?>
+                <div class="form-item">
+                    <span> <i class="fas fa-phone"></i> </span>
+                    <input type="text" name="phone_number" placeholder="Phone Number" autocomplete="off" id="">
+                </div>
+
+            <?php } ?>
+
+
+            <!--  -->
+            <?php if (isset($_GET['res_address_error'])) { ?>
+                 <div class="form-item">
+                    <span> <i class="fas fa-location-crosshairs"></i> </span>
+                    <input type="text" name="res_address" placeholder="GPS Code"  value="<?= $_GET['res_address'] ?>" autocomplete="off" id="">
+                </div>
+                <p class="error"> <?= $_GET['res_address_error'] ?> </p>                 
+            <?php } elseif (isset($_GET['res_address'])) { ?>
+               <div class="form-item">
+                    <span> <i class="fas fa-location-crosshairs"></i> </span>
+                    <input type="text" name="res_address" placeholder="GPS Code"  value="<?= $_GET['res_address'] ?>" autocomplete="off" id="">
+                </div>     
+           <?php } else{ ?>
+                <div class="form-item">
+                    <span> <i class="fas fa-location-crosshairs"></i> </span>
+                    <input type="text" name="res_address" placeholder="GPS Code" autocomplete="off" id="">
+                </div>
+            <?php } ?>
+
+            <!--  -->
+            <?php if (isset($_GET['password_error'])) { ?>
+                <div class="form-item">
+                    <span> <i class="fas fa-lock"></i> </span>
+                    <input type="password" name="password" placeholder="Password" id="">
+                </div>
+                <p class="error"> <?= $_GET['password_error'] ?> </p>            
+            <?php  } else { ?>
+                <div class="form-item">
+                    <span> <i class="fas fa-lock"></i> </span>
+                    <input type="password" name="password" placeholder="Password" id="">
+                </div>
+            <?php } ?>
+
+
+            <!--  -->
+            <?php if (isset($_GET['confirm_password_error'])) { ?>
+                <div class="form-item">
+                    <span> <i class="fas fa-lock"></i> </span>
+                    <input type="password" name="confirm_password" placeholder="Confirm Password" id="">
+                </div>
+                 <p class="error"> <?= $_GET['confirm_password_error'] ?> </p>                  
+            <?php } else{ ?> 
+                <div class="form-item">
+                    <span> <i class="fas fa-lock"></i> </span>
+                    <input type="password" name="confirm_password" placeholder="Confirm Password" id="">
+                </div>
+            <?php } ?>
 
          <div class="form-submit form-item">
-             <!-- <span> <i class="fas fa-user"></i> </span> -->
              <input type="submit" name="submit" value="SIGN-UP" id="">
          </div>
-         <p class="signin-link"> Have an account. </p>
      </form>
 
      <span class="signup-close-btn"> <i class="fas fa-close"></i> </span>
  </div>
 
+<!--  -->
  <div class="signin-wrapper">
      <h2>SIGN-IN</h2>
      <form action="" method="post">

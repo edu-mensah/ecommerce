@@ -19,25 +19,13 @@
             
         </ul>
     </div>
-    <!-- <div class="slider-wrapper"> -->
-    <!-- <img src="system/images/promo/Explosion_day_d.gif" alt=""> -->
     <div class="carousel">
         <a href="">
-            <div class="carousel-item">
+            <!-- <div class="carousel-item">
                 <div class="red">
                     <img src="system/images/promo/Explosion_day_d.gif" alt="">
                 </div>
-            </div>
-            <!-- <div class="carousel-item">
-            <div class="green">
-                <img src="system/images/promo/GloB_d.jpg" alt="">
-            </div>
-        </div> -->
-            <!-- <div class="carousel-item">
-            <div class="yellow">
-                <img src="system/images/promo/FS-712Live.gif" alt="">
-            </div>
-        </div> -->
+            </div> -->
             <div class="carousel-item">
                 <div class="violet">
                     <img src="system/images/promo/gsf_td_3_d.png" alt="">
