@@ -54,6 +54,7 @@
   /* height: inherit; */
   top: 0;
   left: 100%;
+  z-index: 5;
 }
 .active {
   left: 0;
@@ -99,8 +100,8 @@
 .showcase-ad-wrapper {
   grid-column: 5;
   grid-row: 2;
-  background: url("../images/promo/FEW.gif");
-  background-size: cover;
+  background: url("../images/promo/amazon.gif");
+    background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }

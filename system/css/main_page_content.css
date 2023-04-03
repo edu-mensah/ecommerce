@@ -130,34 +130,12 @@
 .computing-product-wrapper div {
   width: 210px;
   height: 280px;
-  padding: 15px;
+  padding: 10px;
   border-radius: 10px;
+  font-size: 0.8rem;
 }
 
-/* .promotion-product-wrapper div:nth-child(even),
-.supermarket-product-wrapper div:nth-child(even),
-.top-selling-products-product-wrapper div:nth-child(even) {
-  background-color: #d8d7d7;
-} */
 
-/* .phones-and-tablets-product-wrapper div {
-  width: 280px;
-  padding: 10px;
-} */
-
-
-/* .promotion-wrapper a,
-.accessories-wrapper a,
-.phones-and-tablets-wrapper a,
-.top-selling-products-wrapper a,
-.electronics-wrapper a,
-.gaming-wrapper a,
-.computing-wrapper a,
-.fashion-and-clothing-wrapper a {
-  color: #ff0000;
-  width: 100px;
-  margin: 20px auto;
-} */
 
 .link-to-page{
   color: #ff0000;
@@ -167,9 +145,11 @@
 .add-to-cart-btn {
   background-color: #ff0000;
   color: #ffffff;
+  width: 100%;
   border: none;
-  border-radius: 10px;
+  border-radius: 50px;
   padding: 10px 15px;
+  margin: 5px 0;
   cursor: pointer;
   transition: 0.3s ease-in-out;
 }

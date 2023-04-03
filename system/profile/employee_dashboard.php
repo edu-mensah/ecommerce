@@ -76,8 +76,10 @@ $count_order = $stmt_order->rowCount();
     <link rel="shortcut icon" href="../images/icons/favicon.jpg" type="image/x-icon">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin G22 ONLINE SHOP</title>
+    <title>Dashboard G22 ONLINE SHOP</title>
     <link rel="stylesheet" href="../css/admin_account.css?v=<?= time();?>">
+    <link rel="stylesheet" href="../css/navbar.css?v=<?= time();?>">
+    <link rel="stylesheet" href="../css/footer.css?v=<?= time();?>">
 
     <!-- fontawesome -->
     <link rel="stylesheet" href="../fontawesome/css/all.css  ?v=<?= time();?>">
@@ -92,8 +94,8 @@ $count_order = $stmt_order->rowCount();
     </div>
     <h2><?= $_SESSION['employee_type'] ?></h2>
     <ul class="drop-down-menu" >
-        <li>Name: <?= $_SESSION['name']; ?></li>
-        <li>Email: <?= $_SESSION['email']; ?></li>
+        <li><strong>Name:</strong> <?= $_SESSION['name']; ?></li>
+        <li><strong>Email:</strong> <?= $_SESSION['email']; ?></li>
         <li><a href="../configuration/sign_out.php">Log-out</a></li>
     </ul>
 </nav>
@@ -137,7 +139,7 @@ $count_order = $stmt_order->rowCount();
         </div>
         <div class="card">
             <h3><?= $product_stock->stock; ?></h3>
-            <p>STOCK</p>
+            <p>PRODUCTS IN STOCK</p>
         </div>
         </div>
     </section>
@@ -586,6 +588,6 @@ $count_order = $stmt_order->rowCount();
 
 
 <script src="../js/admin.js"></script>
-<script src="../fontawesome/js/all.js"></script>
-</body>
-</html>
+<?php 
+    include_once('../includes/pages_footer.php')
+?>

@@ -3,14 +3,18 @@
 
     <?php
     include 'navigation.php';
+
+
+
+    // Electronic Products
+    $electronic_select_query = "SELECT * FROM products WHERE product_category = 2;";
+    $stmt_electronic = $connection->prepare($electronic_select_query);
+    $stmt_electronic->execute();
+    $electronic_products = $stmt_electronic->fetchAll();
+
+
+
     ?>
-
-
-
-
-
-
-
 
 
 
@@ -25,99 +29,18 @@
             </span>
         </div>
         <div class="electronics-product-container">
-            <div class="">
-                <span>
-                    <img src="../images/products/guinness_malta_drink.jpg" alt="">
-                </span>
-                <p>Nasco Air Conditioner</p>
-                <p>GHc 1,150</p>
-                <button class="add-to-cart-btn"> ADD TO CART </button>
-            </div>
 
-            <div class="">
-                <span>
-                    <img src="../images/promo/Explosion_day_d.gif" alt="">
-                </span>
-                <p>Nasco Air Conditioner</p>
-                <p>GHc 1,150</p>
-                <button class="add-to-cart-btn"> ADD TO CART </button>
-            </div>
-
-            <div class="">
-                <span>
-                    <img src="../images/promo/Explosion_day_d.gif" alt="">
-                </span>
-                <p>Nasco Air Conditioner</p>
-                <p>GHc 1,150</p>
-                <button class="add-to-cart-btn"> ADD TO CART </button>
-            </div>
-
-            <div class="">
-                <span>
-                    <img src="../images/promo/Explosion_day_d.gif" alt="">
-                </span>
-                <p>Nasco Air Conditioner</p>
-                <p>GHc 1,150</p>
-                <button class="add-to-cart-btn"> ADD TO CART </button>
-            </div>
-
-            <div class="">
-                <span>
-                    <img src="../images/promo/Explosion_day_d.gif" alt="">
-                </span>
-                <p>Nasco Air Conditioner</p>
-                <p>GHc 1,150</p>
-                <button class="add-to-cart-btn"> ADD TO CART </button>
-            </div>
-
-            <div class="">
-                <span>
-                    <img src="../images/promo/Explosion_day_d.gif" alt="">
-                </span>
-                <p>Nasco Air Conditioner</p>
-                <p>GHc 1,150</p>
-                <button class="add-to-cart-btn"> ADD TO CART </button>
-            </div>
-
-            <div class="">
-                <span>
-                    <img src="../images/promo/Explosion_day_d.gif" alt="">
-                </span>
-                <p>Nasco Air Conditioner</p>
-                <p>GHc 1,150</p>
-                <button class="add-to-cart-btn"> ADD TO CART </button>
-            </div>
-
-
-            <div class="">
-                <span>
-                    <img src="../images/promo/Explosion_day_d.gif" alt="">
-                </span>
-                <p>Nasco Air Conditioner</p>
-                <p>GHc 1,150</p>
-                <button class="add-to-cart-btn"> ADD TO CART </button>
-            </div>
-
-
-            <div class="">
-                <span>
-                    <img src="../images/promo/Explosion_day_d.gif" alt="">
-                </span>
-                <p>Nasco Air Conditioner</p>
-                <p>GHc 1,150</p>
-                <button class="add-to-cart-btn"> ADD TO CART </button>
-            </div>
-
-
-            <div class="">
-                <span>
-                    <img src="../images/promo/Explosion_day_d.gif" alt="">
-                </span>
-                <p>Nasco Air Conditioner</p>
-                <p>GHc 1,150</p>
-                <button class="add-to-cart-btn"> ADD TO CART </button>
-            </div>
-
+            <?php foreach ($electronic_products as $electronic) { ?>
+                <div class="">
+                    <span>
+                        <img src="../images/products/<?= $electronic->product_image;?>" alt="">
+                    </span>
+                    <p><?= ucwords($electronic->product_name); ?>  </p>
+                    <p>GHc <?= $electronic->product_price; ?></p>
+                    <button class="add-to-cart-btn"> ADD TO CART </button>
+                </div>
+            <?php } ?>
+            
         </div>
         </div>
     </main>

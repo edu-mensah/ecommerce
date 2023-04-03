@@ -1,6 +1,17 @@
 <?php 
-
 session_start();
+
+
+include_once '../database_connection/database_connection.php';
+include_once '../functions/functions.php';
+
+
+
+
+
+
+
+
 ?>
 
 <!DOCTYPE html>
@@ -24,6 +35,8 @@ session_start();
     <link rel="stylesheet" href="../css/fashion_and_clothing_page.css?v=<?= time();?>">
     <link rel="stylesheet" href="../css/gaming_page.css?v=<?= time();?>">
     <link rel="stylesheet" href="../css/footer.css?v=<?= time();?>">
+    <link rel="stylesheet" href="../css/search_product.css?v=<?= time();?>">
+    <link rel="stylesheet" href="../css/cart.css?v=<?= time();?>">
     <link rel="stylesheet" href="../css/responsive.css?v=<?= time();?>">
 
     <!-- fontawesome -->
@@ -64,12 +77,12 @@ session_start();
 
 
          <div class="search-form-wrapper">
-             <form action="" method="get">
+             <form action="search_product.php" method="get">
                  <div class="form-item">
-                     <input type="search" name="search" placeholder="Search All Products here" autocomplete="off" id="">
+                     <input type="text" name="search" placeholder="Search All Products here" autocomplete="off" id="">
                  </div>
                  <div class="form-submit">
-                     <button type="submit"> <i class="fas fa-search"></i> SEARCH </button>
+                     <button type="submit" name="submit" value="submit"> <i class="fas fa-search"></i> SEARCH </button>
                  </div>
              </form>
          </div>
@@ -95,6 +108,25 @@ session_start();
 
          <div class="cart-icon-wrapper">
              <h3> <i class="fas fa-shopping-cart"></i> Cart </h3>
+             <ul class="cart">
+                <form class="cart-form" action="" method="post">
+                    <li class="cart-item">
+                        <span><img src="../images/products/android tv2.jpg" alt="product picture"></span>
+                        <input type="hidden" name="product_id" value="product_id" >
+                        <span>Android TV</span>
+                        <input type="text" name="product_qty" value="1" autocomplete="off" >
+                    </li>
+                    <li class="cart-item">
+                        <span><img src="../images/products/10m HD HDMI Cable High Speed -Ethernet V1.4 4K 3D.jpg" alt="product picture"></span>
+                        <input type="hidden" name="product_id" value="product_id" >
+                        <span>Android TV</span>
+                        <input type="text" name="product_qty" value="1" autocomplete="off" >
+                    </li>
+                    <li class="cart-submit" >
+                        <input type="submit" name="submit" value="ORDER" >
+                    </li>
+                </form>
+             </ul>
          </div>
      </div>
  </nav>

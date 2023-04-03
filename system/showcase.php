@@ -21,74 +21,74 @@
     </div>
     <div class="carousel">
         <a href="">
-            <!-- <div class="carousel-item">
-                <div class="red">
-                    <img src="system/images/promo/Explosion_day_d.gif" alt="">
-                </div>
-            </div> -->
             <div class="carousel-item">
-                <div class="violet">
-                    <img src="system/images/promo/gsf_td_3_d.png" alt="">
+                <div class="red">
+                    <img src="system/images/promo/SurfacePro7-12.gif" alt="">
                 </div>
             </div>
             <div class="carousel-item">
+                <div class="violet">
+                    <img src="system/images/promo/amazon.gif" alt="">
+                </div>
+            </div>
+            <!-- <div class="carousel-item">
                 <div class="violet">
                     <img src="system/images/promo/gsf_td_4_d.png" alt="">
                 </div>
-            </div>
-            <div class="carousel-item">
+            </div> -->
+            <!-- <div class="carousel-item">
                 <div class="violet">
                     <img src="system/images/promo/w1_th_d.gif" alt="">
                 </div>
-            </div>
+            </div> -->
+
+            <!-- <div class="carousel-item">
+                <div class="">
+                    <img src="system/images/promo/bags_gsf_d.jpg" alt="">
+                </div>
+            </div> -->
 
             <div class="carousel-item">
                 <div class="">
-                    <img src="system/images/promo/bags_gsf_d.jpg" alt="">
+                    <img src="system/images/promo/animated-gif-email-example-01.gif" alt="">
                 </div>
             </div>
 
             <!-- <div class="carousel-item">
-            <div class="">
-                <img src="sytem/images/promo/Delron_gsf_m.jpg" alt="">
-            </div>
-        </div> -->
-
-            <div class="carousel-item">
                 <div class="">
                     <img src="system/images/promo/philips_gsf_d.jpg" alt="">
                 </div>
-            </div>
+            </div> -->
 
-            <div class="carousel-item">
+            <!-- <div class="carousel-item">
                 <div class="">
                     <img src="system/images/promo/sneaker_gsf_d.jpg" alt="">
                 </div>
-            </div>
+            </div> -->
 
-            <div class="carousel-item">
+            <!-- <div class="carousel-item">
                 <div class="">
                     <img src="system/images/promo/tshirt_gsf_d.jpg" alt="">
                 </div>
-            </div>
+            </div> -->
 
-            <div class="carousel-item">
+            <!-- <div class="carousel-item">
                 <div class="">
                     <img src="system/images/promo/tv_gsf_d.png" alt="">
                 </div>
-            </div>
+            </div> -->
 
-            <div class="carousel-item">
+            <!-- <div class="carousel-item">
                 <div class="">
                     <img src="system/images/promo/w1_th_d.gif" alt="">
                 </div>
-            </div>
+            </div> -->
 
-            <div class="carousel-item">
+            <!-- <div class="carousel-item">
                 <div class="">
                     <img src="system/images/promo/yams_gsf_d.png" alt="">
                 </div>
-            </div>
+            </div> -->
         </a>
     </div>
     <!-- </div> -->

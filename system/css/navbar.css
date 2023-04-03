@@ -258,17 +258,17 @@ img {
 
 
 .account-drop-menu{
-position: absolute;
-z-index: 15;
-background-color: #ffffff;
-width: 200px;
-/* height: 150px; */
-padding: 20px;
-border-radius: 10px;
-top: 183px;
-box-shadow: 0 0 20px #0000003b;
-/* overflow: hidden; */
-display: none;
+  position: absolute;
+    z-index: 15;
+    background-color: #ffffff;
+    width: 200px;
+    /* height: 150px; */
+    padding: 20px;
+    border-radius: 10px;
+    top: 183px;
+    box-shadow: 0 0 20px #0000003b;
+    /* overflow: hidden; */
+    display: none;
 }
 
 .show-menu{
@@ -294,17 +294,7 @@ display: none;
   box-shadow: 0 0 20px #ff000093;
 }
 
-.cart-icon-wrapper {
-  width: 10%;
-  cursor: pointer;
-  text-align: center;
-  padding: 10px;
-  font-size: 1rem;
-  color: #ff0000;
-  background: #ffffff;
-  border-radius: 5px;
-  box-shadow: 0 0 10px #0000002d;
-}
+
 
 
 

@@ -1,8 +1,9 @@
 /* Media queries */
 @media screen and (max-width: 1024px) {
-    body{
-        background-color: #ff0000;
-    }
+    /* body{
+                                    /* background-color: #ff0000; */
+        /* } */
+        */
     .ad-navbar-wrapper div {
             max-width: 900px;
         }
@@ -69,5 +70,9 @@
         grid-column: 4/6;
         grid-row: 3;
     }
+.main-page-wrapper,
+.main-container {
+    max-width: 900px;
+}
 
 }

@@ -3,6 +3,9 @@
 session_start();
 
 
+include_once 'system/database_connection/database_connection.php';
+include_once 'system/functions/functions.php';
+
 
 
 ?>
@@ -22,6 +25,7 @@ session_start();
     <link rel="stylesheet" href="system/css/showcase.css?v=<?= time();?>">
     <link rel="stylesheet" href="system/css/main_page_content.css?v=<?= time();?>">
     <link rel="stylesheet" href="system/css/top_selling_products.css?v=<?= time();?>">
+    <link rel="stylesheet" href="system/css/cart.css?v=<?= time();?>">
     <link rel="stylesheet" href="system/css/footer.css?v=<?= time();?>">
     <link rel="stylesheet" href="system/css/responsive.css?v=<?= time();?>">
     <!-- fontawesome -->

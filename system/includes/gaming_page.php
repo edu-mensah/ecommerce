@@ -3,6 +3,14 @@
 
     <?php
     include 'navigation.php';
+
+
+
+     // Gaming Products
+    $gaming_select_query = "SELECT * FROM products WHERE product_category = 1;";
+    $stmt_gaming = $connection->prepare($gaming_select_query);
+    $stmt_gaming->execute();
+    $gaming_products = $stmt_gaming->fetchAll();
     ?>
 
 
@@ -25,106 +33,20 @@
             </span>
         </div>
         <div class="gaming-product-container">
-            <div class="">
-                <span>
-                    <img src="../images/products/guinness_malta_drink.jpg" alt="">
-                </span>
-                <p>Nasco Air Conditioner</p>
-                <p>GHc 1,150</p>
-                <button class="add-to-cart-btn"> ADD TO CART </button>
-            </div>
-
-            <div class="">
-                <span>
-                    <img src="../images/promo/Explosion_day_d.gif" alt="">
-                </span>
-                <p>Nasco Air Conditioner</p>
-                <p>GHc 1,150</p>
-                <button class="add-to-cart-btn"> ADD TO CART </button>
-            </div>
-
-            <div class="">
-                <span>
-                    <img src="../images/promo/Explosion_day_d.gif" alt="">
-                </span>
-                <p>Nasco Air Conditioner</p>
-                <p>GHc 1,150</p>
-                <button class="add-to-cart-btn"> ADD TO CART </button>
-            </div>
-
-            <div class="">
-                <span>
-                    <img src="../images/promo/Explosion_day_d.gif" alt="">
-                </span>
-                <p>Nasco Air Conditioner</p>
-                <p>GHc 1,150</p>
-                <button class="add-to-cart-btn"> ADD TO CART </button>
-            </div>
-
-            <div class="">
-                <span>
-                    <img src="../images/promo/Explosion_day_d.gif" alt="">
-                </span>
-                <p>Nasco Air Conditioner</p>
-                <p>GHc 1,150</p>
-                <button class="add-to-cart-btn"> ADD TO CART </button>
-            </div>
-
-            <div class="">
-                <span>
-                    <img src="../images/promo/Explosion_day_d.gif" alt="">
-                </span>
-                <p>Nasco Air Conditioner</p>
-                <p>GHc 1,150</p>
-                <button class="add-to-cart-btn"> ADD TO CART </button>
-            </div>
-
-            <div class="">
-                <span>
-                    <img src="../images/promo/Explosion_day_d.gif" alt="">
-                </span>
-                <p>Nasco Air Conditioner</p>
-                <p>GHc 1,150</p>
-                <button class="add-to-cart-btn"> ADD TO CART </button>
-            </div>
-
-
-            <div class="">
-                <span>
-                    <img src="../images/promo/Explosion_day_d.gif" alt="">
-                </span>
-                <p>Nasco Air Conditioner</p>
-                <p>GHc 1,150</p>
-                <button class="add-to-cart-btn"> ADD TO CART </button>
-            </div>
-
-
-            <div class="">
-                <span>
-                    <img src="../images/promo/Explosion_day_d.gif" alt="">
-                </span>
-                <p>Nasco Air Conditioner</p>
-                <p>GHc 1,150</p>
-                <button class="add-to-cart-btn"> ADD TO CART </button>
-            </div>
-
-
-            <div class="">
-                <span>
-                    <img src="../images/promo/Explosion_day_d.gif" alt="">
-                </span>
-                <p>Nasco Air Conditioner</p>
-                <p>GHc 1,150</p>
-                <button class="add-to-cart-btn"> ADD TO CART </button>
-            </div>
+            <?php foreach ($gaming_products as $gaming) { ?>
+                <div class="">
+                    <span>
+                        <img src="../images/products/<?= $gaming->product_image;?>" alt="">
+                    </span>
+                    <p><?php echo(ucwords($gaming->product_name));  ?></p>
+                    <p>GHc <?= $gaming->product_price;?></p>
+                    <button class="add-to-cart-btn"> ADD TO CART </button>
+                </div>
+            <?php } ?>
 
         </div>
         </div>
     </main>
-
-
-
-
 
 
 

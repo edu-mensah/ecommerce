@@ -62,6 +62,7 @@
 <script src="../js/sign_and_login.js" type="text/javascript" ></script>
 <script src="../js/showcase.js" type="text/javascript" ></script>
 <script src="../js/main_page_content.js " type="text/javascript" ></script>
+<script src="../js/cart.js" type="text/javascript" ></script>
 </body>
 
 </html>

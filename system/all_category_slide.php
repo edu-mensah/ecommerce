@@ -29,7 +29,7 @@
 
     <div>
         <span>
-            <a href="#wedding"><img src="system/images/products/Mobile_Accessories.png" alt=""></a>
+            <a href="#wedding"><img src="system/images/products/wedding.jpg" alt=""></a>
         </span>
         <p>Wedding</p>
     </div>

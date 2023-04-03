@@ -23,6 +23,18 @@
 
     <?php
     include 'navigation.php';
+
+
+
+     // Wedding Products
+    $wedding_select_query = "SELECT * FROM products WHERE product_category = 6 LIMIT 10;";
+    $stmt_wedding = $connection->prepare($wedding_select_query);
+    $stmt_wedding->execute();
+    $wedding_products = $stmt_wedding->fetchAll();
+
+
+
+
     ?>
 
 
@@ -45,99 +57,17 @@
             </span>
         </div>
         <div class="wedding-product-container">
-            <div class="">
-                <span>
-                    <img src="../images/products/guinness_malta_drink.jpg" alt="">
-                </span>
-                <p>Nasco Air Conditioner</p>
-                <p>GHc 1,150</p>
-                <button class="add-to-cart-btn"> ADD TO CART </button>
-            </div>
-
-            <div class="">
-                <span>
-                    <img src="../images/promo/Explosion_day_d.gif" alt="">
-                </span>
-                <p>Nasco Air Conditioner</p>
-                <p>GHc 1,150</p>
-                <button class="add-to-cart-btn"> ADD TO CART </button>
-            </div>
-
-            <div class="">
-                <span>
-                    <img src="../images/promo/Explosion_day_d.gif" alt="">
-                </span>
-                <p>Nasco Air Conditioner</p>
-                <p>GHc 1,150</p>
-                <button class="add-to-cart-btn"> ADD TO CART </button>
-            </div>
-
-            <div class="">
-                <span>
-                    <img src="../images/promo/Explosion_day_d.gif" alt="">
-                </span>
-                <p>Nasco Air Conditioner</p>
-                <p>GHc 1,150</p>
-                <button class="add-to-cart-btn"> ADD TO CART </button>
-            </div>
-
-            <div class="">
-                <span>
-                    <img src="../images/promo/Explosion_day_d.gif" alt="">
-                </span>
-                <p>Nasco Air Conditioner</p>
-                <p>GHc 1,150</p>
-                <button class="add-to-cart-btn"> ADD TO CART </button>
-            </div>
-
-            <div class="">
-                <span>
-                    <img src="../images/promo/Explosion_day_d.gif" alt="">
-                </span>
-                <p>Nasco Air Conditioner</p>
-                <p>GHc 1,150</p>
-                <button class="add-to-cart-btn"> ADD TO CART </button>
-            </div>
-
-            <div class="">
-                <span>
-                    <img src="../images/promo/Explosion_day_d.gif" alt="">
-                </span>
-                <p>Nasco Air Conditioner</p>
-                <p>GHc 1,150</p>
-                <button class="add-to-cart-btn"> ADD TO CART </button>
-            </div>
-
-
-            <div class="">
-                <span>
-                    <img src="../images/promo/Explosion_day_d.gif" alt="">
-                </span>
-                <p>Nasco Air Conditioner</p>
-                <p>GHc 1,150</p>
-                <button class="add-to-cart-btn"> ADD TO CART </button>
-            </div>
-
-
-            <div class="">
-                <span>
-                    <img src="../images/promo/Explosion_day_d.gif" alt="">
-                </span>
-                <p>Nasco Air Conditioner</p>
-                <p>GHc 1,150</p>
-                <button class="add-to-cart-btn"> ADD TO CART </button>
-            </div>
-
-
-            <div class="">
-                <span>
-                    <img src="../images/promo/Explosion_day_d.gif" alt="">
-                </span>
-                <p>Nasco Air Conditioner</p>
-                <p>GHc 1,150</p>
-                <button class="add-to-cart-btn"> ADD TO CART </button>
-            </div>
-
+            <?php foreach ($wedding_products as $wedding) { ?>
+                <div class="">
+                    <span>
+                        <img src="../images/products/<?= $wedding->product_image;?>" alt="">
+                    </span>
+                    <p><?= ucwords($wedding->product_name); ?></p>
+                    <p>GHc <?= $wedding->product_price;?></p>
+                    <button class="add-to-cart-btn"> ADD TO CART </button>
+                </div>            
+            <?php } ?>
+            
         </div>
         </div>
     </main>

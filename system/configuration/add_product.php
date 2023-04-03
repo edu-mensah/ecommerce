@@ -14,7 +14,7 @@ if (isset($_POST['submit'])) {
     $product_id = validate_text_input($_POST['product_id']);
     $product_name = validate_text_input($_POST['product_name']);
     $product_desc = validate_text_input($_POST['product_desc']);
-    $price = intval(validate_text_input($_POST['price']));
+    $price = floatval(validate_text_input($_POST['price']));
     $product_category = intval(validate_text_input($_POST['product_category']));
     $product_weight = validate_text_input($_POST['product_weight']);
     $product_stock = intval(validate_text_input($_POST['product_qty']));

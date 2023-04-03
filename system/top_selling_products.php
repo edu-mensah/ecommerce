@@ -27,10 +27,10 @@
 
         <div class="product-item">
             <span>
-                <img src="system/images/products/guinness_malta_drink.jpg" alt="">
+                <img src="system/images/products/ps_4.jpg" alt="">
             </span>
-            <p>Guinness malta</p>
-            <p>GHc 50</p>
+            <p>PS 4 Console </p>
+            <p>GHc 2400</p>
             <!-- <button class="add-to-cart-btn"> ADD TO CART </button> -->
         </div>
 

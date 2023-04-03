@@ -1,0 +1,30 @@
+.search-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.search-item:nth-child(odd) {
+    background-color: #e7e7e7;
+}
+
+.search-item span:nth-child(1),
+.search-item span:nth-child(3) {
+    width: 20%;
+}
+
+
+.search-item span:nth-child(2),
+.search-item span:nth-child(4),
+.search-item span:nth-child(5),
+.search-item button {
+    width: 12%;
+}
+
+.no-search {
+    color: #ff0000;
+    margin: 30px 0;
+    background-color: #e7e7e7;
+    padding: 10px;
+}

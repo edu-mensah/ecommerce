@@ -194,11 +194,11 @@ img {
 
 .list-header, .list-item{
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: space-between;
     background-color: #010847;
     color: #ffffff;
-    padding: 10px 20px;
+    padding: 10px;
 }
 
 .list-header h3{
@@ -210,7 +210,7 @@ img {
 
 .list-item{
     color: #000000;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 .list-item:nth-child(even){
     background-color: #cecece;
